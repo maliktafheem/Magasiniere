@@ -1,0 +1,55 @@
+.button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #cb8b0c 0%, #f57200 100%),
+            #e2891c,
+            #ec8b15,
+            radial-gradient(center 50% 50%, radius 100%, #ec8b15, #c5882c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 50px;
+    -fx-font-family: "Cooper Black";
+    -fx-text-fill: #FFFFFF;
+}
+.button:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #cb8b0c 0%, #f57200 100%),
+            #e2891c,
+            #ec8b15,
+            radial-gradient(center 50% 50%, radius 100%, #e0a947, #c5882c);
+}
+.button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.button Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+#label {
+    -fx-font-weight: bold;
+    -fx-font-size: 50px;
+    -fx-font-family: "Cooper Black";
+    -fx-fill: white;
+}
+#title {
+    -fx-font-weight: bold;
+    -fx-font-size: 70px;
+    -fx-font-family: "Cooper Black";
+    -fx-fill: gold;
+}
+#instructions {
+    -fx-font-size: 25px;
+    -fx-font-family: "Courier New";
+    -fx-text-fill: #303f9f;
+    -fx-effect: dropshadow(gaussian, green, 30, .5, 0.5, 0.5);
+}
+#pane{
+    -fx-background-image: url("/resources/Assets/Background.gif");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 600 600;
+    -fx-background-position: top left;
+    -fx-effect: dropshadow(gaussian, black, 30, 0.5, 0, 0);
+}
